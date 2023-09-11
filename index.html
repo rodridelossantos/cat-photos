@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat Photos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-800">
+    <div class="flex flex-col gap-12">
+      <div class="flex flex-col justify-center items-center p-3">
+        <label
+          for="breed-options"
+          class="block text-sm font-medium leading-6 text-gray-200 text-xl font-semibold"
+          >Choose a Cat Breed</label
+        >
+        <select
+          id="breed-options"
+          name="breed-options"
+          class="mt-2 block w-1/3 rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        ></select>
+      </div>
+
+      <div>
+        <div>
+          <div class="bg-gray-900 pb-20">
+            <div
+              class="mx-auto flex max-w-7xl flex-col items-center gap-x-8 gap-y-10 px-6"
+            >
+              <div class="-mt-8 w-full max-w-2xl">
+                <div
+                  class="relative aspect-[2/1] h-full"
+                  id="image-container"
+                ></div>
+              </div>
+              <div class="w-full max-w-2xl">
+                <figure class="relative isolate">
+                  <blockquote
+                    class="text-xl font-semibold leading-8 text-white"
+                  >
+                    <p id="breed-description"></p>
+                  </blockquote>
+                  <figcaption class="mt-8 text-base">
+                    <p class="font-semibold text-white" id="breed-name"></p>
+                    <p class="mt-1 text-gray-400" id="breed-origin"></p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
